@@ -5,99 +5,223 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>HydraLog Privacy Policy</title>
   <style>
+    :root {
+      --bg: #f6f8fb;
+      --surface: #ffffff;
+      --text: #0f172a;
+      --muted: #475569;
+      --accent: #14b8a6;
+      --border: #e2e8f0;
+    }
+
+    * { box-sizing: border-box; }
+
     body {
-      font-family: Arial, sans-serif;
       margin: 0;
-      padding: 0;
-      background: #f7fafc;
-      color: #111827;
-      line-height: 1.6;
+      font-family: Arial, Helvetica, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
     }
-    .container {
-      max-width: 900px;
+
+    .wrap {
+      max-width: 960px;
       margin: 40px auto;
-      background: white;
+      padding: 0 20px;
+    }
+
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 18px;
       padding: 32px;
-      border-radius: 16px;
-      box-shadow: 0 8px 30px rgba(0,0,0,0.08);
+      box-shadow: 0 10px 30px rgba(15, 23, 42, 0.06);
     }
-    h1, h2 {
-      color: #0f172a;
+
+    h1 {
+      margin-top: 0;
+      font-size: 34px;
+      line-height: 1.2;
     }
+
+    h2 {
+      margin-top: 34px;
+      font-size: 22px;
+      color: var(--text);
+    }
+
+    p, li {
+      font-size: 16px;
+      color: var(--text);
+    }
+
+    .muted {
+      color: var(--muted);
+      font-size: 14px;
+      margin-top: -8px;
+    }
+
     a {
-      color: #0ea5e9;
+      color: var(--accent);
       text-decoration: none;
     }
+
     a:hover {
       text-decoration: underline;
     }
-    .muted {
-      color: #64748b;
+
+    ul {
+      padding-left: 22px;
+    }
+
+    code {
+      background: #f1f5f9;
+      padding: 2px 6px;
+      border-radius: 6px;
+      font-family: Consolas, monospace;
       font-size: 14px;
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <h1>Privacy Policy for HydraLog</h1>
-    <p class="muted">Last updated: March 8, 2026</p>
+  <div class="wrap">
+    <div class="card">
+      <h1>Privacy Policy for HydraLog</h1>
+      <p class="muted">Last updated: March 8, 2026</p>
 
-    <p>
-      HydraLog is a water reminder and hydration tracking application developed by DreamLexicon.
-      This Privacy Policy explains what information the app processes, how it is used, and what choices users have.
-    </p>
+      <p>
+        HydraLog is a water reminder and hydration tracking mobile application developed by DreamLexicon.
+        This Privacy Policy explains what information HydraLog processes, how that information is used,
+        and what choices users have regarding their data.
+      </p>
 
-    <h2>Information We Process</h2>
-    <p>
-      HydraLog stores hydration-related information locally on your device, such as water intake entries,
-      reminder preferences, daily goal settings, sleep/wake schedule, language preference, and energy check-in data.
-    </p>
+      <h2>1. Information HydraLog Processes</h2>
+      <p>
+        HydraLog is designed to work without requiring account creation or login.
+        The app primarily stores and uses data locally on the user’s device to provide hydration tracking features.
+      </p>
+      <p>Depending on how you use the app, HydraLog may process the following categories of information:</p>
+      <ul>
+        <li>Water intake entries, including amount, date, time, and source of the entry (for example manual entry, widget action, or notification action)</li>
+        <li>Daily hydration goal settings</li>
+        <li>Wake time and sleep time preferences</li>
+        <li>Reminder settings and reminder schedules</li>
+        <li>Language and unit preferences</li>
+        <li>Energy or mood check-in data entered inside the app</li>
+        <li>Basic app preferences needed for features such as onboarding completion and app behavior</li>
+      </ul>
 
-    <h2>Local Storage</h2>
-    <p>
-      User data is primarily stored locally on the device using local app storage. HydraLog does not require
-      users to create an account and does not operate its own backend server for account-based data collection.
-    </p>
+      <h2>2. Local Storage</h2>
+      <p>
+        HydraLog primarily stores user data locally on the device using on-device app storage.
+        HydraLog does not require a personal account and does not operate its own backend server for user accounts,
+        cloud syncing, or profile-based data collection at this time.
+      </p>
+      <p>
+        This means your hydration logs, reminder settings, goals, and related app preferences are generally kept on your device,
+        unless your device or third-party platform tools back them up independently.
+      </p>
 
-    <h2>Notifications</h2>
-    <p>
-      HydraLog uses local notifications to remind users to drink water. Notification permissions may be requested
-      depending on the Android version used on the device.
-    </p>
+      <h2>3. Notifications and Reminder Features</h2>
+      <p>
+        HydraLog uses local notifications to send drink water reminders and reminder-related actions.
+        Depending on your Android version, the app may request notification permission in order to deliver these reminders.
+      </p>
+      <p>
+        Notification actions may allow you to quickly interact with the app, such as adding a water intake amount,
+        snoozing a reminder, or opening the app.
+      </p>
 
-    <h2>Advertising</h2>
-    <p>
-      HydraLog may display advertisements using third-party advertising services such as Google AdMob.
-      These services may collect certain device identifiers, diagnostics, and usage-related data as described
-      in their own policies.
-    </p>
+      <h2>4. Home Screen Widgets</h2>
+      <p>
+        HydraLog may provide Android home screen widgets to let users quickly log water intake or view hydration progress.
+        These widgets use locally available app data and device functionality to provide their features.
+      </p>
 
-    <h2>Third-Party Services</h2>
-    <p>
-      HydraLog may use third-party SDKs including Google AdMob and other platform services required for notifications
-      and app functionality.
-    </p>
+      <h2>5. Advertising</h2>
+      <p>
+        HydraLog may display ads through third-party advertising services, including Google AdMob.
+        These third-party services may collect or process certain information such as device identifiers,
+        app interactions, diagnostics, and advertising-related data in accordance with their own privacy policies and platform requirements.
+      </p>
+      <p>
+        DreamLexicon does not directly control how third-party advertising providers process data on their own systems.
+        Users should review the privacy policies of those providers for more information.
+      </p>
 
-    <h2>Data Deletion</h2>
-    <p>
-      Users can clear certain app data from within the app settings. Depending on the feature, some preferences
-      may remain unless the app is fully cleared or uninstalled.
-    </p>
+      <h2>6. Third-Party Services</h2>
+      <p>
+        HydraLog may rely on third-party SDKs, libraries, and platform services in order to provide app functionality.
+        These may include services related to:
+      </p>
+      <ul>
+        <li>Advertising</li>
+        <li>Local notifications</li>
+        <li>Device widgets</li>
+        <li>Basic app analytics, diagnostics, or platform-level service functionality provided by Android or integrated SDKs</li>
+      </ul>
 
-    <h2>Children’s Privacy</h2>
-    <p>
-      HydraLog is not specifically directed toward children. If you are a parent or guardian and believe a child
-      has provided personal information, please contact us.
-    </p>
+      <h2>7. Data Sharing</h2>
+      <p>
+        HydraLog does not sell your personal data.
+        Data entered into the app is primarily stored locally on your device.
+        However, third-party SDK providers such as advertising services may process certain technical or device-related data
+        as part of their functionality.
+      </p>
 
-    <h2>Contact</h2>
-    <p>
-      If you have any questions about this Privacy Policy, you can contact:
-      <br />
-      <strong>DreamLexicon Support</strong>
-      <br />
-      Email: <a href="mailto:dreamlexicon.sup@gmail.com">dreamlexicon.sup@gmail.com</a>
-    </p>
+      <h2>8. Data Retention</h2>
+      <p>
+        Locally stored data remains on your device unless it is deleted by you, cleared through app settings,
+        removed through system-level app data clearing, or deleted when the app is uninstalled.
+      </p>
+      <p>
+        Depending on the current app version, some in-app data clearing tools may remove hydration and energy-related data
+        while leaving certain preferences, reminders, or profile-related settings intact unless the app is fully cleared or uninstalled.
+      </p>
+
+      <h2>9. Data Deletion and User Choices</h2>
+      <p>
+        Users may have options within the app to clear certain locally stored data.
+        Users may also remove app data using their device’s application settings or by uninstalling the app.
+      </p>
+      <p>
+        Users can also disable reminders, deny notification permissions, or limit ad personalization through their device or Google account settings where applicable.
+      </p>
+
+      <h2>10. Children’s Privacy</h2>
+      <p>
+        HydraLog is not specifically directed to children.
+        If you are a parent or guardian and believe that a child has provided information in a way that raises concern,
+        please contact us and we will review the issue.
+      </p>
+
+      <h2>11. Security</h2>
+      <p>
+        HydraLog uses reasonable measures appropriate to an app that primarily stores data locally on-device.
+        However, no method of storage or transmission can be guaranteed to be completely secure.
+      </p>
+
+      <h2>12. International Users</h2>
+      <p>
+        If third-party service providers process technical or advertising-related data, that processing may occur in countries
+        other than the one in which you are located, subject to the policies and infrastructure of those providers.
+      </p>
+
+      <h2>13. Changes to This Privacy Policy</h2>
+      <p>
+        This Privacy Policy may be updated from time to time to reflect app updates, legal requirements, or service changes.
+        The updated version will be posted at this page with a revised “Last updated” date.
+      </p>
+
+      <h2>14. Contact</h2>
+      <p>
+        If you have any questions about this Privacy Policy or HydraLog, you can contact:
+      </p>
+      <p>
+        <strong>DreamLexicon Support</strong><br />
+        Email: <a href="mailto:dreamlexicon.sup@gmail.com">dreamlexicon.sup@gmail.com</a>
+      </p>
+    </div>
   </div>
 </body>
 </html>
